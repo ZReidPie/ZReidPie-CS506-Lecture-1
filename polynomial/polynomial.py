@@ -4,6 +4,7 @@ class X:
 
     def __repr__(self):
         return "X"
+    
     def evaluate(self, i):
         return i
 
@@ -57,6 +58,5 @@ poly = Add(
     Add(X(), Mul(Int(1), Add(Mul(X(), X()), Int(1))))
 )
 
-#print(poly)
-
+print(poly)
 print(poly.evaluate(-1))
